@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Zorigliy</title>
+        <style>
+            .header {
+                width: 100%;
+                height: 144px;
+                background-color: #fcfcfc54;
+                background: fixed;
+                filter: blur(16px);
+            }
+            .header button {
+                padding: 8px 16px;
+                font-family: Arial, Helvetica, sans-serif;
+                color: #fff;
+                background: linear-gradient(-115deg, #3347b4, #6ee0aa);
+                border: 1px solid linear-gradient(153deg, #a36767, #251919);
+            }
+            .header button :hover{
+                font-family: Arial, Helvetica, sans-serif;
+                color: #000000;
+                background: linear-gradient(-41deg, #3347b4, #6ee0aa);
+                border: 1px solid linear-gradient(-38deg, #a36767, #251919);
+            }
+            #contact {
+                background: #ffffff00;
+            }
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            button {
+                padding: 8px 16px;
+                font-size: 16px;
+                color: rgb(0, 0, 0);
+                background-color: rgba(255, 255, 255, 0);
+                border: none; /* Remove default border */
+                border-radius: 8px;
+                position: relative;
+                cursor: pointer;
+            }
+
+            button::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                border-radius: 8px; /* Match button's border-radius */
+                padding: 2px; /* Border thickness */
+                background: linear-gradient(-69deg, #37cade, #4cedb3, #6520d5, #df29c2);
+                -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+                -webkit-mask-composite: xor;
+                mask-composite: exclude; /* For modern browsers */
+                pointer-events: none; /* Let clicks pass through */
+            }
+            button:hover{
+                background-color: #002366;
+            }
+            .footer{
+                background: fixed;
+            }
+            .footer button{
+                border: 1px solid #ffffff;
+                align-items: center;
+                padding: 8px;
+            }
+            .footer button:hover{
+                border: 2px solid #ffffff;
+                align-items: center;
+                padding: 8px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <img src="zorigliy.svg" alt="none" style="position: absolute; top: 34px; left: 70px;">
+            <div>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+            </div>
+        </div>
+        <div><iframe src='https://my.spline.design/untitled-e33a32cfac06034975e6a2b7dc2135c2/' frameborder='0' width='100%' height='100%'></iframe></div>
+        <div class="footer"></div>
+    </body>
+</html>

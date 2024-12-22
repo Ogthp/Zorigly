@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sources</title>
+    <style>
+        h1 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            text-align: center; /* Center-align the heading text */
+        }
+    
+        h3 {
+            font-size: 1rem;
+            line-height: 1.5;
+            text-align: center; /* Center-align text */
+        }
+    
+        /* Main content container */
+        .content-section {
+            display: flex;
+            align-items: flex-start; /* Align content to the top */
+            justify-content: space-between;
+            margin: 50px auto;
+            padding: 0 5%;
+        }
+    
+        .left-content, .right-content {
+            justify-content: space-between;
+            flex: 1;
+            padding: 20px;
+        }
+    
+        .left-content ul {
+            list-style: none;
+            text-align: center; /* Center-align list items */
+        }
+    
+        .left-content li {
+            margin: 5px 0;
+            font-size: 1.1rem;
+        }
+    
+        iframe {
+            width: 100%;
+            height: 315px;
+            border: none;
+            border-radius: 10px;
+        }
+    
+        .top-iframe {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin: 40px 0;
+        }
+    
+        /* Button container for frames */
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+    
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .content-section {
+                flex-direction: column;
+                text-align: center;
+            }
+    
+            iframe {
+                height: 250px;
+            }
+        }
+    </style>
+    
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="logo">
+          <img src="zorigli.svg" height="44px" width="44px" alt="Logo" onclick="navigateToHome()"> 
+        </div>
+        <div class="nav">
+          <a onclick="navigateToLesson()">Lessons</a>
+          <a onclick="navigateToSource()">Sources</a>
+          <a onclick="navigateToEvent()">Events</a>
+          <a onclick="navigateToAbout()">About us</a>
+        </div>
+        <button class="glow-on-hover" type="button" onclick="navigateToContact()">CONTACT US</button>
+    </div>
+
+    <!-- Centered Top Iframe -->
+    <div class="top-iframe">
+        <iframe src="https://unicorn.studio/embed/1fWPPeJeIaLqoHCJYGDy" loading="lazy"></iframe>
+    </div>
+
+    <!-- Section 1 -->
+    <div class="content-section">
+        <div class="left-content">
+            <h1>Movies to Watch</h1>
+            <ul>
+                <li>Peaceful Warrior</li>
+                <li>The Truman Show</li>
+                <li>Whiplash</li>
+            </ul>
+            <div class="button-container">
+                <button class="button">Learn More</button>
+                <button class="button">Watch Now</button>
+            </div>
+        </div>
+        <div class="right-content">
+            <iframe src="https://www.youtube.com/embed/uY5oF0tZiWI" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- Section 2 -->
+    <div class="content-section">
+        <div class="left-content">
+            <iframe src="https://openlibrary.org/"></iframe>
+        </div>
+        <div class="right-content">
+            <h1>Books to Read</h1>
+            <ul>
+                <li>A Man's Search For Meaning</li>
+                <li>The Alchemist</li>
+                <li>Tuesdays with Morrie</li>
+            </ul>
+            <div class="button-container">
+                <button class="button">Learn More</button>
+                <button class="button">Watch Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 3 -->
+    <div class="content-section">
+        <div class="left-content">
+            <h1>YouTube Page</h1>
+            <h3>This is Gohar’s guide. Watch his videos and take notes—it’s worth it!</h3>
+            <div class="button-container">
+                <button class="button">Learn More</button>
+                <button class="button">Watch Now</button>
+            </div>
+        </div>
+        <div class="right-content">
+            <iframe src="https://www.youtube.com/embed/gk5FEFf8Guo" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- Section 4 -->
+    <div class="content-section">
+        <div class="left-content">
+            <iframe src="https://admitium.com/"></iframe>
+        </div>
+        <div class="right-content">
+            <h1>Admitium</h1>
+            <h3>Though it’s a little pricey, you can learn tons here. Best of luck!</h3>
+            <div class="button-container">
+                <button class="button">Learn More</button>
+                <button class="button">Watch Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 5 -->
+    <div class="content-section">
+        <div class="left-content">
+            <h1>College Essay Guy</h1>
+            <h3>Tons of free lessons and tips. Learn to write better essays with examples!</h3>
+            <div class="button-container">
+                <button class="button">Learn More</button>
+                <button class="button">Watch Now</button>
+            </div>
+        </div>
+        <div class="right-content">
+            <iframe src="https://www.youtube.com/embed/uk7pLY4jbDU" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <button class="scrollToTopBtn" title="Go to top">↑</button>
+    
+    <footer class="footer">
+        <div class="footer-content" style="float: left;">
+            <h2>Contact us</h2>
+            <p>We will answer to your emails as soon as possible</p>
+        </div>
+        <div>
+          
+        </div>
+        <div class="form-container-1">
+          <form action="#">
+              <input type="text" id="name" name="name" placeholder="Enter your name" required>
+              <input type="email" id="email" name="email" placeholder="Enter your email" required>
+              <textarea id="comment" name="comment" placeholder="Enter your comment" required></textarea>
+              
+              <button class="submit">Submit</button>
+          </form>
+        </div>
+      </footer>
+    <script src="pagenav.js"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zorigly - Free Lessons</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .lesson-grid {
+      display: grid;
+      grid-template-columns: 1fr; /* Only one column */
+      gap: 40px;
+      margin-top: 40px;
+    }
+
+    .lesson iframe {
+      width: 100%; /* Make iframe take full width of its container */
+      height: 650px; /* Adjust height as needed */
+    }
+
+    .lesson {
+      text-align: center;
+      padding: 20px;
+      gap: 20px !important;
+    }
+    .lesson h2{
+      font-size: 48px;
+      font-weight: 800;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <div class="header">
+    <div class="logo">
+      <img src="zorigli.svg" height="44px" width="44px" alt="Logo" onclick="navigateToHome()"> 
+    </div>
+    <div class="nav">
+      <a onclick="navigateToLesson()">Lessons</a>
+      <a onclick="navigateToSource()">Sources</a>
+      <a onclick="navigateToEvent()">Events</a>
+      <a onclick="navigateToAbout()">About us</a>
+    </div>
+    <button class="glow-on-hover" type="button" onclick="navigateToContact()">CONTACT US</button>
+  </div>
+
+  <!-- Free Lessons Section -->
+  <section class="free-lessons">
+    <h1 style="font-size: 96px; font-weight: 800;">Free Lessons</h1>
+    <p>Why we share free lessons?<br>
+      We do it because we want to share our experiences with others who are willing to learn but don’t know where to<br> start, also kids who want to broaden their horizons.
+    </p>
+
+    <div class="lesson-grid">
+      <!-- Lesson 1 -->
+      <div class="lesson">
+        <iframe src="https://careerwiseenglish.com.au/" frameborder="0"></iframe>
+        <h2>IELTS</h2>
+        <p>We do it because we want to share our experiences with others who are willing to learn but don’t know where to start, also<br> kids who want to broaden their horizons.</p>
+      </div>
+
+      <!-- Lesson 2 -->
+      <div class="lesson">
+        <iframe src="https://www.youtube.com/embed/oPuJG6AJOlQ?si=ChmjUb34G0bW5H8i" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <h2>SAT</h2>
+        <p>We do it because we want to share our experiences with others who are willing to learn but don’t know where to start, also<br> kids who want to broaden their horizons.</p>
+      </div>
+
+      <!-- Lesson 3 -->
+      <div class="lesson">
+        <iframe src="https://www.youtube.com/embed/804V5JiHx7Y?si=JbmJiybw85_Wyc8C" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <h2>Application Process</h2>
+        <p>We do it because we want to share our experiences with others who are willing to learn but don’t know where to start, also<br> kids who want to broaden their horizons.</p>
+      </div>
+
+      <!-- Lesson 4 -->
+      <div class="lesson">
+        <iframe src="https://www.youtube.com/embed/ueHdNT_elgo?si=BbPcdEibrFgNmrC7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <h2>Find Yourself</h2>
+        <p>We do it because we want to share our experiences with others who are willing to learn but don’t know where to start, also<br> kids who want to broaden their horizons.</p>
+      </div>
+    </div>
+  </section>
+
+  <button class="scrollToTopBtn" title="Go to top">↑</button>
+
+  <footer class="footer">
+    <div class="footer-content" style="float: left;">
+        <h2 style="margin-top: 20px;">Contact us</h2>
+        <p>We will answer to your emails <br> as soon as possible</p>
+    </div>
+    <div>
+      
+    </div>
+    <div class="form-container-1">
+      <form action="#">
+          <input type="text" id="name" name="name" placeholder="Enter your name" required>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+          <textarea id="comment" name="comment" placeholder="Enter your comment" required></textarea>
+          
+          <button class="submit">Submit</button>
+      </form>
+    </div>
+  </footer>
+<script src="pagenav.js"></script>
+</body>
+</html>
+

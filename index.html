@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zorigly</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            background-color: #001333; /* Matches the blue background in the desired look */
+        }
+
+.card {
+    background-color: white; /* Match desired card background */
+    color: #333; /* Darker gray for text */
+    border-radius: 8px; /* Slightly reduce roundness */
+    width: 300px; /* Wider card for better alignment */
+    text-align: center;
+    padding: 20px; /* Add spacing inside the card */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.card h3 {
+    font-size: 1.25em; /* Adjust header size */
+    margin-top: 10px;
+}
+
+.card p {
+    font-size: 1em; /* Adjust text size */
+    margin: 10px 0;
+}
+
+.card button {
+    margin-top: 10px;
+    padding: 8px 12px;
+    font-size: 0.9em; /* Reduce font size */
+    color: white;
+    background: linear-gradient(135deg, #7f00ff, #e100ff);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="logo">
+          <img src="zorigli.svg" height="44px" width="44px" alt="Logo" onclick="navigateToHome()"> 
+        </div>
+        <div class="nav">
+          <a onclick="navigateToLesson()">Lessons</a>
+          <a onclick="navigateToSource()">Sources</a>
+          <a onclick="navigateToEvent()">Events</a>
+          <a onclick="navigateToAbout()">About us</a>
+        </div>
+        <button class="glow-on-hover" type="button" onclick="navigateToContact()">CONTACT US</button>
+    </div>
+
+    <div></div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Growing While Sharing</h1>
+        <p>We have an aim to share courages to kids whilst growing and learning in the process</p>
+    </section>
+    <!-- Cards Section -->
+    <section class="cards">
+        <div class="card">
+            <img src="IMG_7978.JPG" alt="At Zavkhan">
+            <h3>At Zavkhan</h3>
+            <p>We visited Tosontsengel the coldest province in Mongolia holding an event with more than 250+ kids</p>
+            <button onclick="navigateToEvent()">Read More</button>
+        </div>
+        <div class="card">
+            <img src="1.jpg" alt="Free Lessons">
+            <h3>Free Lessons</h3>
+            <p>We held free lessons for kids, focusing on creativity and education</p>
+            <button onclick="navigateToLesson()">Read More</button>
+        </div>
+        <div class="card">
+            <img src="4.JPG" alt="Sources">
+            <h3>Sources</h3>
+            <p>Providing kids with the resources they need to grow and achieve success</p>
+            <button onclick="navigateToSource()">Read More</button>
+        </div>
+    </section>
+    <!-- Iframe Section -->
+    <div id="iF1" style="margin-bottom: 50px;"><iframe src='https://my.spline.design/iphone14procopy-cfe11d099793fbdc9d955c475ded48af/' frameborder='0' width='100%' height='100%'></iframe>
+        <h1 style="align-self: center; justify-content: center;">Do you have this?</h1>
+        <p style="align-self: center; justify-content: center;">then you could learn more and more things from internet</p>
+    </div>
+
+    <button class="scrollToTopBtn" title="Go to top">↑</button>
+
+    <footer class="footer">
+        <div class="footer-content" style="float: left;">
+            <h2>Contact us</h2>
+            <p>We will answer to your emails as soon as possible</p>
+        </div>
+        <div>
+          
+        </div>
+        <div class="form-container-1">
+          <form action="#">
+              <input type="text" id="name" name="name" placeholder="Enter your name" required>
+              <input type="email" id="email" name="email" placeholder="Enter your email" required>
+              <textarea id="comment" name="comment" placeholder="Enter your comment" required></textarea>
+              
+              <button class="submit">Submit</button>
+          </form>
+        </div>
+      </footer>
+    <script src="pagenav.js"></script>
+</body>
+</html>
