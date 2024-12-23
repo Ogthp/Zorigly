@@ -13,11 +13,11 @@
     box-sizing: border-box;
   }
 
-  #iF {
+  .iF {
     border: #00000000;
   }
 
-  #iF1 {
+  .iF1 {
     justify-content: center;
     justify-self: center;
     display: block;
